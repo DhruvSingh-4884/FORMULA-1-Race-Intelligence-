@@ -4,13 +4,15 @@ An interactive Formula 1 analytics demonstration built from the project plan and
 
 ## Download and run
 
-Download and extract the [complete project bundle](./f1-race-intelligence-complete.zip). From the extracted `f1-race-intelligence` folder, run:
+Download and extract the [complete project bundle](./f1-race-intelligence-complete.zip). You can open the standalone [dashboard.html](./dashboard.html) directly in Chrome by double-clicking it. Its CSV sample is embedded in the HTML, so Chrome’s local-file restrictions will not block the data. The separate CSV in the bundle remains available for reuse.
+
+Alternatively, from the extracted f1-race-intelligence folder, run:
 
 ```powershell
 python -m http.server 8000
 ```
 
-Open [http://localhost:8000/dashboard.html](http://localhost:8000/dashboard.html). The dashboard loads its CSV over HTTP, so serve the folder instead of opening the HTML with a `file://` URL.
+Then open http://localhost:8000/dashboard.html.
 
 ## Included dashboard
 
@@ -18,7 +20,7 @@ Eight analytical views, four KPI cards, filters for Season, Constructor, Driver,
 
 ## Data warning
 
-The included 6,464-row CSV is **synthetic sample data**. It matches the expected schema but does not represent real Formula 1 results. Do not treat the dashboard values as real sporting conclusions. Replace the sample with verified race data before drawing conclusions.
+The included 6,464-row CSV is **synthetic sample data**. It matches the expected schema but does not represent real Formula 1 results. Do not treat the sample chart values as sporting conclusions. Replace it with verified race data before drawing conclusions.
 
 ## Tableau status
 
